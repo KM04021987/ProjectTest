@@ -3,6 +3,8 @@ applications:
 - path: .
   name: ProjectTest
   buildpack: nodejs_buildpack
+  command: npm start
   memory: 512M
   instances: 1
   random-route: true
+  env: NPM_CONFIG_PRODUCTION: false
